@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UncoverB2B - Templates</title>
+    <link rel="stylesheet" href="template-styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">UNCOVERB2B</div>
+            <ul class="nav-links">
+                <li><a href="#">Services</a></li>
+                <li class="dropdown">
+                    <a href="#">B2B SaaS Templates</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Minutes of Meeting</a></li>
+                        <li><a href="#">Discovery Call Checklist</a></li>
+                        <li><a href="#">Mutual Action Plan</a></li>
+                        <li><a href="#">Executive Summary</a></li>
+                        <li><a href="#">Internal Deal Review</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">FAQs</a></li>
+            </ul>
+            <button class="register-button">Register as a Referral Partner</button>
+        </nav>
+    </header>
+
+    <main>
+        <section class="templates-list">
+            <h2>Our Templates</h2>
+            <div class="templates-container">
+                <div class="template-item">
+                    <img src="assets/image/thumb-mom.png" alt="Minutes of Meeting">
+                    <h3>Minutes of Meeting</h3>
+                    <p>Capture detailed notes and decisions made during meetings, ensuring all participants are aligned.</p>
+                    <p>Organize follow-up actions and key takeaways for future reference and accountability.</p>
+                    <button class="download-button" data-file="mom.pdf">Download Now</button>
+                </div>
+                <div class="template-item">
+                    <img src="assets/image/thumb-dc.png" alt="Discovery Call Checklist">
+                    <h3>Discovery Call Checklist</h3>
+                    <p>A structured guide to ensure all important topics are covered during initial client calls.</p>
+                    <p>Helps in gathering essential information to understand client needs and potential solutions.</p>
+                    <button class="download-button" data-file="dc.pdf">Download Now</button>
+                </div>
+                <div class="template-item">
+                    <img src="assets/image/thumb-map.png" alt="Mutual Action Plan">
+                    <h3>Mutual Action Plan</h3>
+                    <p>A collaborative document outlining steps and responsibilities for both parties in a project.</p>
+                    <p>Facilitates transparency and sets clear expectations for successful project completion.</p>
+                    <button class="download-button" data-file="map.xlsx">Download Now</button>
+                </div>
+                <div class="template-item">
+                    <img src="assets/image/thumb-es.png" alt="Executive Summary">
+                    <h3>Executive Summary</h3>
+                    <p>Designed to give executives a quick insight into the essential information and recommendations.</p>
+                    <p>A concise overview of a business plan, proposal, or report highlighting key points.</p>
+                    <button class="download-button" data-file="es.docx">Download Now</button>
+                </div>
+                <div class="template-item">
+                    <img src="assets/image/thumb-idr.png" alt="Internal Deal Review">
+                    <h3>Internal Deal Review</h3>
+                    <p>A comprehensive analysis of ongoing deals to assess progress, challenges, and next steps.</p>
+                    <p>Helps in identifying potential issues and ensures alignment with business goals.</p>
+                    <button class="download-button" data-file="idr.jpeg">Download Now</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-top">
+            <h2>Ready to experience Referral led Growth for your B2B SaaS?</h2>
+            <p>Connect with us and unleash the power of referrals.</p>
+            <a href="#" class="cta-button">Talk with an expert on Slack</a>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-column">
+                <h3>UNCOVERB2B</h3>
+                <p>&copy; 2024 Uncover B2B Solutions.</p>
+            </div>
+            <div class="footer-column">
+                <h3>Services</h3>
+                <ul>
+                    <li><a href="#">Referral Discovery Program (RDP)</a></li>
+                    <li><a href="#">Outbound Prospecting</a></li>
+                    <li><a href="#">GTM Diagnosis</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>B2B Saas Templates</h3>
+                <ul>
+                    <li><a href="#">Minutes of Meeting</a></li>
+                    <li><a href="#">Discovery Call Checklist</a></li>
+                    <li><a href="#">Mutual Action Plan</a></li>
+                    <li><a href="#">Executive Summary</a></li>
+                    <li><a href="#">Internal Deal Review</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Connect with us</h3>
+                <a href="#"><img src="linkedin-icon.png" alt="LinkedIn"></a>
+            </div>
+        </div>
+    </footer>
+    <script type="text/javascript">
+        document.addEventListener("DOMContentLoaded", function() {
+            const downloadButtons = document.querySelectorAll(".download-button");
+
+            downloadButtons.forEach(button => {
+                button.addEventListener("click", function() {
+                    const fileName = this.getAttribute("data-file");
+                    const link = document.createElement("a");
+                    link.href = `docs/${fileName}`; // Update this path to the correct location of your files
+                    link.download = fileName;
+                    link.target = "_blank";
+                    document.body.appendChild(link);
+                    link.click();
+                    document.body.removeChild(link);
+                });
+            });
+        });
+    </script>
+</body>
+</html>
