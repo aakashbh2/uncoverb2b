@@ -73,6 +73,20 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 });
 
+// document.querySelectorAll('.accordion-header').forEach(button => {
+//     button.addEventListener('click', () => {
+//         const accordionContent = button.nextElementSibling;
+
+//         button.classList.toggle('active');
+
+//         if (button.classList.contains('active')) {
+//             accordionContent.style.maxHeight = accordionContent.scrollHeight + 'px';
+//         } else {
+//             accordionContent.style.maxHeight = 0;
+//         }
+//     });
+// });
+
 document.querySelectorAll('.accordion-header').forEach(button => {
     button.addEventListener('click', () => {
         const accordionContent = button.nextElementSibling;
@@ -86,3 +100,10 @@ document.querySelectorAll('.accordion-header').forEach(button => {
         }
     });
 });
+function openNav() {
+    document.getElementById("mySidenav").style.width = "100%";
+  }
+  
+  function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+  }
