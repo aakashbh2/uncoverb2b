@@ -40,33 +40,35 @@
 
 document.addEventListener('DOMContentLoaded', function () {
     var modal = document.getElementById("myModal");
-    var btn = document.getElementById("referPartner");
-    var btn2 = document.getElementById("createPage");
+    var btn = document.getElementById("createPage");
     var span = document.getElementsByClassName("close")[0];
-    var cancelBtn = document.getElementById("cancelBtn");
+    var span1 = document.getElementsByClassName("closes")[0];
+
+    var modalRefer = document.getElementById("myModalRefer");
+    var btnRefer = document.getElementById("referPartner");
 
     // When the user clicks the button, open the modal 
     btn.onclick = function() {
         modal.style.display = "block";
     }
-    btn2.onclick = function() {
-        modal.style.display = "block";
+
+    btnRefer.onclick = function() {
+        modalRefer.style.display = "block";
     }
 
     // When the user clicks on <span> (x), close the modal
     span.onclick = function() {
         modal.style.display = "none";
     }
-
-    // When the user clicks on the cancel button, close the modal
-    cancelBtn.onclick = function() {
-        modal.style.display = "none";
+    span1.onclick = function() {
+        modalRefer.style.display = "none";
     }
 
     // When the user clicks anywhere outside of the modal, close it
     window.onclick = function(event) {
         if (event.target == modal) {
             modal.style.display = "none";
+            modalRefer.style.display = "none";
         }
     }
 });
