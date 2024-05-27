@@ -1,37 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UncoverB2B - Templates</title>
-    <link rel="stylesheet" href="template-styles.css">
+    <link rel="stylesheet" href="styles.css">
+    <meta property="og:type" content="website">
+
+    <title>Referral Led Inbound Leads for Companies</title>
+    <meta property="og:title" content="Referral Led Inbound Leads for B2B SaaS Companies" />
+    <meta name="twitter:title" content="Referral Led Inbound Leads for B2B SaaS Companies" />
+
+    <meta name="description" content="High-intent leads for SDRs to reach out to the Right Lead at the Right Time.">
+    <meta property="og:description"
+        content="High-intent leads for SDRs to reach out to the Right Lead at the Right Time." />
+    <meta name="twitter:description"
+        content="High-intent leads for SDRs to reach out to the Right Lead at the Right Time." />
+
+    <link rel="icon" type="image/png" href="https://unicorn-cdn.b-cdn.net/a02e1f71-fc88-4fd3-9d43-73c8f80a4dce/" sizes="16x16" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 </head>
 <body>
     <header>
-        <nav>
-            <div class="logo">UNCOVERB2B</div>
-            <ul class="nav-links">
-                <li><a href="#">Why us?</a></li>
-                <li class="dropdown">
-                    <a href="#">B2B SaaS Templates</a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">Minutes of Meeting</a></li>
-                        <li><a href="#">Discovery Call Checklist</a></li>
-                        <li><a href="#">Mutual Action Plan</a></li>
-                        <li><a href="#">Executive Summary</a></li>
-                        <li><a href="#">Internal Deal Review</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">FAQs</a></li>
-            </ul>
-            <button class="register-button">Register as a Referral Partner</button>
-        </nav>
+        <div class="container-fluid">
+            <nav>
+                <div class="logo"><a href="/" target="_self">
+                    <img height="150" alt="Uncoverb2b logo" src="assets/image/1.png" sizes="100px"/>
+                </a></div>
+                <ul class="nav-links">
+
+                    <li><a href="index.html">Why us?</a></li>
+                    <li class="dropdown">
+                        <a href="templates.html">B2B SaaS Templates <i class="fa-solid fa-caret-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="templates.html">Minutes of Meeting</a></li>
+                            <li><a href="templates.html">Discovery Call Checklist</a></li>
+                            <li><a href="templates.html">Mutual Action Plan</a></li>
+                            <li><a href="templates.html">Executive Summary</a></li>
+                            <li><a href="templates.html">Internal Deal Review</a></li>
+
+                        </ul>
+                    </li>
+                 
+                    <li><a href="#">Discover Companies</a></li>
+                    <li id="referPartner" class="register-button">Register as a Referral Partner</li>
+
+                </ul>
+
+                <div id="mySidenav" class="sidenav">
+                  <div class="fl-float-rigt">
+                     <div class="fl-fl-data">
+                        <div class="logo"><a href="/" target="_self">
+                            <img height="100" alt="Uncoverb2b logo" src="assets/image/1.png" sizes="100px"/>
+                        </a></div>
+                     </div>
+                   <div class="flex-fl">
+
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                   </div>
+                  </div>
+                    <div class="top-my">
+                        <a id="route-why-us">Why us?</a>
+                        <a href="templates.html">B2B SaaS Templates <i class="fa-solid fa-caret-down"></i></a>
+                        
+                        <a href="#">Discover Companies</a>
+                        <a id="referPartner" class="register-button">Register as a Referral Partner</a>
+                    </div>
+
+                  </div>
+                  <span style="font-size:30px;cursor:pointer" class="menu-bur" onclick="openNav()">
+                    <i class="fa-solid fa-bars"></i>
+                </span>
+            </nav>
+        </div>
     </header>
 
     <main>
-        <section class="templates-list">
-            <h2>Ready to use B2B SaaS Templates.</h2>
-            <h4>Use our pre-defined templates to unlock a superior buying experience for your prospect and to drive better sales engagement.</h4>
+
+        <section class="hero-section">
+            <div class="hero-content">
+                <h1>Ready to use B2B SaaS Templates.</h1>
+                <p>Use our pre-defined templates to unlock a superior buying experience for your prospect and to drive better sales engagement.</p><!-- 
+                <div class="search-bar">
+                    <input type="text" placeholder="Search your template">
+                    <button>SEARCH</button>
+                </div> -->
+            </div>
+        </section>
+
+        <section class="stats-section">
             <div class="templates-container">
                 <div class="template-item">
                     <img src="assets/image/thumb-mom.png" alt="Minutes of Meeting">
@@ -47,19 +115,19 @@
                     <p>Helps in gathering essential information to understand client needs and potential solutions.</p>
                     <button class="download-button" data-file="dc.pdf">Download Now</button>
                 </div>
+                 <div class="template-item">
+                    <img src="assets/image/thumb-es.png" alt="Executive Summary">
+                    <h3>Executive Summary</h3>
+                    <p>Designed to give executives a quick insight into the essential information and recommendations.</p>
+                    <p>A concise overview of a business plan, proposal, or report highlighting key points.</p>
+                    <button class="download-button" data-file="es.docx">Download Now</button>
+                </div>
                 <div class="template-item">
                     <img src="assets/image/thumb-map.png" alt="Mutual Action Plan">
                     <h3>Mutual Action Plan</h3>
                     <p>A collaborative document outlining steps and responsibilities for both parties in a project.</p>
                     <p>Facilitates transparency and sets clear expectations for successful project completion.</p>
                     <button class="download-button" data-file="map.xlsx">Download Now</button>
-                </div>
-                <div class="template-item">
-                    <img src="assets/image/thumb-es.png" alt="Executive Summary">
-                    <h3>Executive Summary</h3>
-                    <p>Designed to give executives a quick insight into the essential information and recommendations.</p>
-                    <p>A concise overview of a business plan, proposal, or report highlighting key points.</p>
-                    <button class="download-button" data-file="es.docx">Download Now</button>
                 </div>
                 <div class="template-item">
                     <img src="assets/image/thumb-idr.png" alt="Internal Deal Review">
@@ -72,24 +140,23 @@
         </section>
     </main>
 
-    <footer class="footer">
+    <div class="footer-contemt-ffl">
         <div class="footer-top">
             <h2>Ready to experience Referral led Growth for your company?</h2>
-            <p>Connect with us and unleash the power of referrals.</p>
-            <a href="#" class="cta-button">Talk with an expert on Slack</a>
+            <button class="secondary-button mt50">Book a demo</button>
         </div>
+    </div>
+
+    <footer class="footer">
+       
         <div class="footer-bottom">
             <div class="footer-column">
-                <h3>UNCOVERB2B</h3>
-                <p>&copy; 2024 Uncover B2B Solutions.</p>
+                <div class="logo"><a href="/" target="_self">
+                    <img height="150" alt="Uncoverb2b logo" src="assets/image/1.png" sizes="100px"/>
+                </a></div>
             </div>
             <div class="footer-column">
-                <h3>Services</h3>
-                <ul>
-                    <li><a href="#">Referral Discovery Program (RDP)</a></li>
-                    <li><a href="#">Outbound Prospecting</a></li>
-                    <li><a href="#">GTM Diagnosis</a></li>
-                </ul>
+                <h3>General</h3>
             </div>
             <div class="footer-column">
                 <h3>B2B Saas Templates</h3>
@@ -103,10 +170,19 @@
             </div>
             <div class="footer-column">
                 <h3>Connect with us</h3>
-                <a href="#"><img src="linkedin-icon.png" alt="LinkedIn"></a>
+                <a href="https://www.linkedin.com/company/uncoverb2b/"><img class="linkedin-icon" src="assets/image/linkedin-icon.webp" alt="LinkedIn"></a>
+            </div>
+        </div>
+        <div class="footer-content">
+            <div class="mt30">
+                <span>Terms & Privacy</span>
+                <a target="_blank" href="mailto:shivam@uncoverb2b.com" class="contact">
+                  shivam@uncoverb2b.com
+                </a>
             </div>
         </div>
     </footer>
+
     <script type="text/javascript">
         document.addEventListener("DOMContentLoaded", function() {
             const downloadButtons = document.querySelectorAll(".download-button");
