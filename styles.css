@@ -144,7 +144,10 @@ header {
 .dropdown-menu li:last-child {
     border-bottom: none;
 }
-
+.dropdown-menu a:hover{
+    transform: translateY(-2px);
+    
+}
 .dropdown-menu a {
     transition: 0.4s;
     display: block;
@@ -1559,7 +1562,6 @@ section.faq h1{
 .hero-section-template {
     padding: 60px 20px;
     text-align: center;
-    color: #8c52ff;
     background-color: #fff;
 }
 
